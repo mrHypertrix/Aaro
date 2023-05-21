@@ -52,7 +52,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     pos = int(y)
 
     line = "—"
-    circle = "◉"
+    circle = "❁"
 
     bar = line*(pos-1)
     bar += circle
@@ -76,9 +76,9 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                       text="💬JOIN",
+                       text="💞Join",
                        url='https://t.me/ArchBots'), 
-            InlineKeyboardButton(
+           InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
         ],
@@ -94,7 +94,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     pos = int(y)
 
     line = "—"
-    circle = "◉"
+    circle = "❁"
 
     bar = line*(pos-1)
     bar += circle
@@ -139,8 +139,8 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                       text="JOIN",
-                       url='https://t.me/ARCHBOTS'), 
+                       text="💞Join",
+                       url='https://t.me/ArchBots'), 
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
